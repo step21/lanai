@@ -38,3 +38,4 @@ have multiplication opcodes, but that is mostly irrelevant for
 Truebit because of its logarithmic scalability - it is possible to
 verify 1000000 computational steps in about five rounds and
 for 100000000 steps it takes eight rounds. 
+
