@@ -2,6 +2,7 @@
 
 set -ev
 
-docker build -t clang-lanai .
-docker run -v $(pwd):/mnt -t clang-lanai clang --target=lanai -S /mnt/example.c
-docker run -v $(pwd):/mnt -t clang-lanai clang --target=lanai -c /mnt/example.c
+#docker build -t step21/clang-lanai-flat .
+docker run -v $(pwd):/mnt -t step21/clang-lanai-flat clang --target=lanai -S /mnt/"$@"
+docker run -v $(pwd):/mnt -t step21/clang-lanai-flat clang --target=lanai -c /mnt/"$@"
+
